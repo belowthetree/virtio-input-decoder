@@ -1,6 +1,6 @@
 [package]
 name = "virtio-input-decoder"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["belowthetree <1363558876@qq.com>"]
 edition = "2018"
 license = "GPL-3.0-or-later"
