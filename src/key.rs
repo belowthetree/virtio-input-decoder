@@ -269,56 +269,56 @@ impl Key {
         Ok(rt)
     }
 
-    pub fn to_char(&self)->char {
+    pub fn to_char(&self)->Result<char, ()> {
         match *self {
-            Key::A => 'a',
-            Key::B => 'b',
-            Key::C => 'c',
-            Key::D => 'd',
-            Key::E => 'e',
-            Key::F => 'f',
-            Key::G => 'g',
-            Key::H => 'h',
-            Key::I => 'i',
-            Key::J => 'j',
-            Key::K => 'k',
-            Key::L => 'l',
-            Key::M => 'm',
-            Key::N => 'n',
-            Key::O => 'o',
-            Key::P => 'p',
-            Key::Q => 'q',
-            Key::R => 'r',
-            Key::S => 's',
-            Key::T => 't',
-            Key::U => 'u',
-            Key::V => 'v',
-            Key::W => 'w',
-            Key::X => 'x',
-            Key::Y => 'y',
-            Key::Z => 'z',
-            Key::Enter => '\r',
-            Key::One => '1',
-            Key::Two => '2',
-            Key::Three => '3',
-            Key::Four => '4',
-            Key::Five => '5',
-            Key::Six => '6',
-            Key::Seven => '7',
-            Key::Eight => '8',
-            Key::Nine => '9',
-            Key::Zero => '0',
-            Key::Dot => '.',
-            Key::Colon => ';',
-            Key::SineglePoint => '\'',
-            Key::BackSlash => '\\',
-            Key::Comma => ',',
-            Key::Slash => '/',
-            Key::Space => ' ',
-            Key::Minus => '-',
-            Key::Equal => '=',
-            Key::Tab => '\t',
-            _ => ' ',
+            Key::A => {Ok('a')}
+            Key::B => {Ok('b')}
+            Key::C => {Ok('c')}
+            Key::D => {Ok('d')}
+            Key::E => {Ok('e')}
+            Key::F => {Ok('f')}
+            Key::G => {Ok('g')}
+            Key::H => {Ok('h')}
+            Key::I => {Ok('i')}
+            Key::J => {Ok('j')}
+            Key::K => {Ok('k')}
+            Key::L => {Ok('l')}
+            Key::M => {Ok('m')}
+            Key::N => {Ok('n')}
+            Key::O => {Ok('o')}
+            Key::P => {Ok('p')}
+            Key::Q => {Ok('q')}
+            Key::R => {Ok('r')}
+            Key::S => {Ok('s')}
+            Key::T => {Ok('t')}
+            Key::U => {Ok('u')}
+            Key::V => {Ok('v')}
+            Key::W => {Ok('w')}
+            Key::X => {Ok('x')}
+            Key::Y => {Ok('y')}
+            Key::Z => {Ok('z')}
+            Key::Enter => {Ok('\r')}
+            Key::One => {Ok('1')}
+            Key::Two => {Ok('2')}
+            Key::Three => {Ok('3')}
+            Key::Four => {Ok('4')}
+            Key::Five => {Ok('5')}
+            Key::Six => {Ok('6')}
+            Key::Seven => {Ok('7')}
+            Key::Eight => {Ok('8')}
+            Key::Nine => {Ok('9')}
+            Key::Zero => {Ok('0')}
+            Key::Dot => {Ok('.')}
+            Key::Colon => {Ok(';')}
+            Key::SineglePoint => {Ok('\'')}
+            Key::BackSlash => {Ok('\\')}
+            Key::Comma => {Ok(',')}
+            Key::Slash => {Ok('/')}
+            Key::Space => {Ok(' ')}
+            Key::Minus => {Ok('-')}
+            Key::Equal => {Ok('=')}
+            Key::Tab => {Ok('\t')}
+            _ => {Err(())}
         }
     }
 }
